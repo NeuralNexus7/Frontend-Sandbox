@@ -26,8 +26,8 @@ body {
 }
 
 .card-container {
-    width: 170px;
-    height: 280px;
+    width: 140px;
+    height: 240px;
     perspective: 1000px;
 }
 
