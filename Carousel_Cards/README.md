@@ -2,7 +2,7 @@
 
 A modern and interactive 3D card carousel built using pure HTML and CSS. Each card features a smooth flip animation and unique styling, making it suitable for portfolios, team showcases, product displays, and creative web projects.
 
-![3D Card Flip Demo](card-flip.gif)
+![3D Card Flip Demo](card.gif)
 
 ## ✨ Features
 
