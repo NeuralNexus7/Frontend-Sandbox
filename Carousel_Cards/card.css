@@ -1,0 +1,161 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+
+    background: linear-gradient(135deg, #7d1275 0.000%, #a90964 11.111%, #de3152 22.222%, #ff7040 33.333%, #ff9f31 44.444%, #ffa027 55.556%, #ff7323 66.667%, #d83326 77.778%, #a40a2f 88.889%, #79103d 100.000%);
+    color: #fff;
+
+    min-height: 100vh;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cards-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    flex-wrap: wrap;
+}
+
+.card-container {
+    width: 170px;
+    height: 280px;
+    perspective: 1000px;
+}
+
+.card {
+    width: 100%;
+    height: 100%;
+
+    text-align: center;
+    transform-style: preserve-3d;
+
+    position: relative;
+
+    transition: transform 0.9s ease;
+}
+
+.card-container:hover .card{
+    transform: rotateY(180deg) translateZ(80px) scale(1.05);
+}
+
+.card-container:hover{
+    z-index: 20;
+}
+
+.card1 { 
+    transform: rotate(-15deg); 
+}
+
+.card2 { 
+    transform: rotate(-5deg); 
+}
+
+.card3 { 
+    transform: rotate(5deg); 
+}
+
+.card4 { 
+    transform: rotate(15deg); 
+}
+
+.card-front,
+.card-back {
+    position: absolute;
+
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+    padding: 20px;
+
+    backface-visibility: hidden;
+
+    border: 1.5px solid rgb(0, 0, 0);
+    border-radius: 16px;
+}
+
+.card1 .card-front{
+    background: linear-gradient(135deg, #003c87 0.000%, #005aaa 20.000%, #007ad7 40.000%, #009afb 60.000%, #00b9ff 80.000%, #00d8ef 100.000%);
+}
+
+.card2 .card-front{
+    background: linear-gradient(135deg, #ff7700 0.000%, #ff7700 2.941%, #ff7900 calc(2.941% + 1px), #ff7900 5.882%, #ff7c00 calc(5.882% + 1px), #ff7c00 8.824%, #ff7f00 calc(8.824% + 1px), #ff7f00 11.765%, #ff8100 calc(11.765% + 1px), #ff8100 14.706%, #ff8400 calc(14.706% + 1px), #ff8400 17.647%, #ff8700 calc(17.647% + 1px), #ff8700 20.588%, #ff8a00 calc(20.588% + 1px), #ff8a00 23.529%, #ff8d00 calc(23.529% + 1px), #ff8d00 26.471%, #ff9006 calc(26.471% + 1px), #ff9006 29.412%, #ff930f calc(29.412% + 1px), #ff930f 32.353%, #ff9617 calc(32.353% + 1px), #ff9617 35.294%, #ff991f calc(35.294% + 1px), #ff991f 38.235%, #ff9c27 calc(38.235% + 1px), #ff9c27 41.176%, #ff9f2f calc(41.176% + 1px), #ff9f2f 44.118%, #ffa237 calc(44.118% + 1px), #ffa237 47.059%, #ffa53e calc(47.059% + 1px), #ffa53e 50.000%, #ffa846 calc(50.000% + 1px), #ffa846 52.941%, #ffab4d calc(52.941% + 1px), #ffab4d 55.882%, #ffae54 calc(55.882% + 1px), #ffae54 58.824%, #ffb15c calc(58.824% + 1px), #ffb15c 61.765%, #ffb563 calc(61.765% + 1px), #ffb563 64.706%, #ffb86a calc(64.706% + 1px), #ffb86a 67.647%, #ffbb71 calc(67.647% + 1px), #ffbb71 70.588%, #ffbe77 calc(70.588% + 1px), #ffbe77 73.529%, #ffc17e calc(73.529% + 1px), #ffc17e 76.471%, #ffc484 calc(76.471% + 1px), #ffc484 79.412%, #ffc88b calc(79.412% + 1px), #ffc88b 82.353%, #ffcb91 calc(82.353% + 1px), #ffcb91 85.294%, #ffce97 calc(85.294% + 1px), #ffce97 88.235%, #ffd19d calc(88.235% + 1px), #ffd19d 91.176%, #ffd4a3 calc(91.176% + 1px), #ffd4a3 94.118%, #ffd7a8 calc(94.118% + 1px), #ffd7a8 97.059%, #ffdbae calc(97.059% + 1px) 100.000%);
+}
+
+.card3 .card-front{
+    background: linear-gradient(135deg, #610033 0.000%, #6d0030 8.333%, #7f0031 16.667%, #950e34 25.000%, #af1d39 33.333%, #c82d41 41.667%, #df3e4c 50.000%, #f14e58 58.333%, #fd5d65 66.667%, #ff6c74 75.000%, #fc7b82 83.333%, #ef8891 91.667%, #dc949e 100.000%);
+}
+
+.card4 .card-front{
+    background: linear-gradient(135deg, #001730 0.000%, #001c34 3.030%, #022137 6.061%, #08253a 9.091%, #0f2a3e 12.121%, #163042 15.152%, #1d3546 18.182%, #243a4b 21.212%, #2b3f4f 24.242%, #324554 27.273%, #394a59 30.303%, #40505e 33.333%, #475563 36.364%, #4f5b68 39.394%, #56616e 42.424%, #5d6773 45.455%, #646d79 48.485%, #6c737f 51.515%, #737985 54.545%, #7a7f8c 57.576%, #818592 60.606%, #888c99 63.636%, #9092a0 66.667%, #9798a7 69.697%, #9d9fae 72.727%, #a4a5b5 75.758%, #abacbc 78.788%, #b2b2c4 81.818%, #b8b9cc 84.848%, #bec0d3 87.879%, #c5c6db 90.909%, #cbcde3 93.939%, #d0d4ec 96.970%, #d6daf4 100.000%);
+}
+
+.card1 .card-back{
+    background: linear-gradient(135deg, #003c87 0.000%, #005aaa 20.000%, #007ad7 40.000%, #009afb 60.000%, #00b9ff 80.000%, #00d8ef 100.000%);
+ 
+    transform: rotateY(180deg);
+
+    justify-content: flex-start;
+}
+
+.card2 .card-back{
+    background: linear-gradient(135deg, #ff7700 0.000%, #ff7700 2.941%, #ff7900 calc(2.941% + 1px), #ff7900 5.882%, #ff7c00 calc(5.882% + 1px), #ff7c00 8.824%, #ff7f00 calc(8.824% + 1px), #ff7f00 11.765%, #ff8100 calc(11.765% + 1px), #ff8100 14.706%, #ff8400 calc(14.706% + 1px), #ff8400 17.647%, #ff8700 calc(17.647% + 1px), #ff8700 20.588%, #ff8a00 calc(20.588% + 1px), #ff8a00 23.529%, #ff8d00 calc(23.529% + 1px), #ff8d00 26.471%, #ff9006 calc(26.471% + 1px), #ff9006 29.412%, #ff930f calc(29.412% + 1px), #ff930f 32.353%, #ff9617 calc(32.353% + 1px), #ff9617 35.294%, #ff991f calc(35.294% + 1px), #ff991f 38.235%, #ff9c27 calc(38.235% + 1px), #ff9c27 41.176%, #ff9f2f calc(41.176% + 1px), #ff9f2f 44.118%, #ffa237 calc(44.118% + 1px), #ffa237 47.059%, #ffa53e calc(47.059% + 1px), #ffa53e 50.000%, #ffa846 calc(50.000% + 1px), #ffa846 52.941%, #ffab4d calc(52.941% + 1px), #ffab4d 55.882%, #ffae54 calc(55.882% + 1px), #ffae54 58.824%, #ffb15c calc(58.824% + 1px), #ffb15c 61.765%, #ffb563 calc(61.765% + 1px), #ffb563 64.706%, #ffb86a calc(64.706% + 1px), #ffb86a 67.647%, #ffbb71 calc(67.647% + 1px), #ffbb71 70.588%, #ffbe77 calc(70.588% + 1px), #ffbe77 73.529%, #ffc17e calc(73.529% + 1px), #ffc17e 76.471%, #ffc484 calc(76.471% + 1px), #ffc484 79.412%, #ffc88b calc(79.412% + 1px), #ffc88b 82.353%, #ffcb91 calc(82.353% + 1px), #ffcb91 85.294%, #ffce97 calc(85.294% + 1px), #ffce97 88.235%, #ffd19d calc(88.235% + 1px), #ffd19d 91.176%, #ffd4a3 calc(91.176% + 1px), #ffd4a3 94.118%, #ffd7a8 calc(94.118% + 1px), #ffd7a8 97.059%, #ffdbae calc(97.059% + 1px) 100.000%);
+
+    transform: rotateY(180deg);
+
+    justify-content: flex-start;
+}
+
+.card3 .card-back{
+    background: linear-gradient(135deg, #610033 0.000%, #6d0030 8.333%, #7f0031 16.667%, #950e34 25.000%, #af1d39 33.333%, #c82d41 41.667%, #df3e4c 50.000%, #f14e58 58.333%, #fd5d65 66.667%, #ff6c74 75.000%, #fc7b82 83.333%, #ef8891 91.667%, #dc949e 100.000%);
+
+    transform: rotateY(180deg);
+
+    justify-content: flex-start;
+}
+
+.card4 .card-back{
+    background: linear-gradient(135deg, #001730 0.000%, #001c34 3.030%, #022137 6.061%, #08253a 9.091%, #0f2a3e 12.121%, #163042 15.152%, #1d3546 18.182%, #243a4b 21.212%, #2b3f4f 24.242%, #324554 27.273%, #394a59 30.303%, #40505e 33.333%, #475563 36.364%, #4f5b68 39.394%, #56616e 42.424%, #5d6773 45.455%, #646d79 48.485%, #6c737f 51.515%, #737985 54.545%, #7a7f8c 57.576%, #818592 60.606%, #888c99 63.636%, #9092a0 66.667%, #9798a7 69.697%, #9d9fae 72.727%, #a4a5b5 75.758%, #abacbc 78.788%, #b2b2c4 81.818%, #b8b9cc 84.848%, #bec0d3 87.879%, #c5c6db 90.909%, #cbcde3 93.939%, #d0d4ec 96.970%, #d6daf4 100.000%);
+
+    transform: rotateY(180deg);
+
+    justify-content: flex-start;
+}
+
+.overlay{
+    position:absolute;
+    bottom:0;
+    left:0;
+
+    width:100%;
+
+    padding:15px;
+    border-radius: 16px;
+
+    background:rgba(0,0,0,0.6);
+    color:white;
+}
+
+.heading {
+    text-align: center;
+
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: xx-large;
+    font-weight: 800;
+
+    position: relative;
+}
