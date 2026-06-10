@@ -92,26 +92,6 @@ Add:
 }
 ```
 
-### Front Card Background Image
-
-Add inside `.card-front`:
-
-```html
-<img src="your-image.jpg" class="card-bg-image" alt="Card Background">
-```
-
-Add:
-
-```css
-.card-bg-image {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border: 1px solid;
-}
-```
-
 ## 📸 Preview
 
 A stylish 3D carousel featuring four interactive flip cards with customizable content, images, and color themes.
