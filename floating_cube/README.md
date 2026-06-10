@@ -42,18 +42,6 @@ project/
 └── README.md
 ```
 
-## 🚀 How to Run
-
-1. Download or clone the repository.
-
-```bash
-git clone https://github.com/your-username/3d-rubiks-cube.git
-```
-
-2. Open `cube.html` in your browser.
-
-That's it! The cube will automatically start rotating.
-
 ## 🎯 Learning Concepts
 
 This project is useful for learning:
