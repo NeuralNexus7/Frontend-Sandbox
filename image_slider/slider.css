@@ -1,25 +1,96 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body{
-    background: linear-gradient(120deg, #ff684d 0.000%, #ff684d 2.941%, #ff644e calc(2.941% + 1px), #ff644e 5.882%, #ff614f calc(5.882% + 1px),#ff614f 8.824%, #ff5e50 calc(8.824% + 1px), #ff5e50 11.765%, #ff5b51 calc(11.765% + 1px), #ff5b51 14.706%, #ff5852 calc(14.706% + 1px), #ff5852 17.647%, #ff5553 calc(17.647% + 1px), #ff5553 20.588%, #ff5254 calc(20.588% + 1px), #ff5254 23.529%, #ff4f54 calc(23.529% + 1px), #ff4f54 26.471%, #ff4d55 calc(26.471% + 1px), #ff4d55 29.412%, #ff4a56 calc(29.412% + 1px), #ff4a56 32.353%, #ff4857 calc(32.353% + 1px), #ff4857 35.294%, #ff4558 calc(35.294% + 1px), #ff4558 38.235%, #ff4359 calc(38.235% + 1px), #ff4359 41.176%, #ff415a calc(41.176% + 1px), #ff415a 44.118%, #ff3f5b calc(44.118% + 1px), #ff3f5b 47.059%, #ff3e5c calc(47.059% + 1px), #ff3e5c 50.000%, #ff3c5d calc(50.000% + 1px), #ff3c5d 52.941%, #ff3a5e calc(52.941% + 1px), #ff3a5e 55.882%, #ff395f calc(55.882% + 1px), #ff395f 58.824%, #ff3860 calc(58.824% + 1px), #ff3860 61.765%, #ff3761 calc(61.765% + 1px), #ff3761 64.706%, #fb3662 calc(64.706% + 1px), #fb3662 67.647%, #f33563 calc(67.647% + 1px), #f33563 70.588%, #ea3464 calc(70.588% + 1px), #ea3464 73.529%, #e23465 calc(73.529% + 1px), #e23465 76.471%, #d93366 calc(76.471% + 1px), #d93366 79.412%, #d03367 calc(79.412% + 1px), #d03367 82.353%, #c83368 calc(82.353% + 1px), #c83368 85.294%, #bf3369 calc(85.294% + 1px), #bf3369 88.235%, #b63369 calc(88.235% + 1px), #b63369 91.176%, #ae346a calc(91.176% + 1px), #ae346a 94.118%, #a5346b calc(94.118% + 1px), #a5346b 97.059%, #9d356c calc(97.059% + 1px) 100.000%);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: linear-gradient(
+        -45deg,
+        #ff684d,
+        #ff3f5b,
+        #9d356c,
+        #6a11cb
+    );
+
+    background-size: 400% 400%;
+    animation: gradientMove 12s ease infinite;
+
+    overflow: hidden;
+}
+
+@keyframes gradientMove{
+    0%{
+        background-position: 0% 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0% 50%;
+    }
 }
 
 .container{
-    margin: 100px 0 0 200px;
+    margin: 0;
     width: 70%;
     height: 450px;
     display: flex;
     justify-content: center;
-    gap: 10px;
+    gap: 2px;
 }
 
 .container img {
     width: 10%;
     height: 100%;
+
     object-fit: cover;
+
     border-radius: 15px;
     border: 2px solid rgba(255, 255, 255, 0.68);
+    
+    transition: all 0.4s ease;
+
+    filter: brightness(0.8);
+}
+
+.container img:hover{
+    filter: brightness(1);
+}
+
+.image-box {
+    position: relative;
+    width: 10%;
+    height: 100%;
     transition: all ease-in-out 0.4s;
 }
 
-.container img:hover {
+.image-box img {
+    width: 90%;
+    height: 100%;
+}
+
+.image-box span {
+    position: absolute;
+    bottom: 20px;
+    left: 15px;
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+    text-shadow: 0 2px 8px rgba(0,0,0,0.8);
+    opacity: 0;
+    transition: opacity 0.4s ease;
+}
+
+.image-box:hover {
     width: 35%;
+}
+
+.image-box:hover span {
+    opacity: 1;
 }
