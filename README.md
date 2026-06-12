@@ -43,7 +43,6 @@ This repository contains multiple frontend animation projects that can be used f
 
 * HTML5
 * CSS3
-* JavaScript
 
 ## 📂 Repository Structure
 
