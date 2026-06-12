@@ -13,7 +13,7 @@ body {
     min-height: 100vh;
     
     display: flex;
-    justify-content: center;
+    justify-content: right;
     align-items: center;
 }
 
@@ -218,7 +218,7 @@ body {
     width: 80px;
     height: 80px;
     left: 5%;
-    animation-duration: 15s;
+    animation-duration: 18s;
 }
 
 /* Bubble 2 */
@@ -226,7 +226,7 @@ body {
     width: 120px;
     height: 120px;
     left: 25%;
-    animation-duration: 20s;
+    animation-duration: 10s;
 }
 
 /* Bubble 3 */
@@ -234,7 +234,7 @@ body {
     width: 100px;
     height: 100px;
     left: 50%;
-    animation-duration: 18s;
+    animation-duration: 16s;
 }
 
 /* Bubble 4 */
@@ -242,23 +242,75 @@ body {
     width: 70px;
     height: 70px;
     left: 70%;
-    animation-duration: 14s;
+    animation-duration: 11s;
 }
 
 /* Bubble 5 */
 .particles span:nth-child(5){
-    width: 130px;
-    height: 130px;
+    width: 90px;
+    height: 90px;
     left: 88%;
-    animation-duration: 22s;
+    animation-duration: 20s;
+}
+
+/* Bubble 6 */
+.particles span:nth-child(6){
+    width: 90px;
+    height: 90px;
+    left: 15%;
+    animation-duration: 14s;
+}
+
+/* Bubble 7 */
+.particles span:nth-child(7){
+    width: 60px;
+    height: 60px;
+    left: 35%;
+    animation-duration: 9s;
+}
+
+/* Bubble 8 */
+.particles span:nth-child(8){
+    width: 110px;
+    height: 110px;
+    left: 60%;
+    animation-duration: 15s;
+}
+
+/* Bubble 9 */
+.particles span:nth-child(9){
+    width: 75px;
+    height: 75px;
+    left: 78%;
+    animation-duration: 17s;
+}
+
+/* Bubble 10 */
+.particles span:nth-child(10){
+    width: 100px;
+    height: 100px;
+    left: 95%;
+    animation-duration: 11s;
 }
 
 @keyframes floatUp{
-    from{
-        transform: translateY(110vh) rotate(0deg);
+    0%{
+        transform: translate(0, 110vh) rotate(0deg);
     }
 
-    to{
-        transform: translateY(-120vh) rotate(360deg);
+    25%{
+        transform: translate(-30px, 75vh) rotate(90deg);
+    }
+
+    50%{
+        transform: translate(40px, 40vh) rotate(180deg);
+    }
+
+    75%{
+        transform: translate(-20px, 5vh) rotate(270deg);
+    }
+
+    100%{
+        transform: translate(25px, -120vh) rotate(360deg);
     }
 }
