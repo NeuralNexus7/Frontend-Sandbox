@@ -43,7 +43,6 @@ This repository contains multiple frontend animation projects that can be used f
 
 * HTML5
 * CSS3
-* JavaScript
 
 ## 📂 Repository Structure
 
@@ -67,10 +66,6 @@ This repository serves as a collection of frontend animation projects to:
 * Build portfolio projects
 * Explore creative web design ideas
 
-## 📸 Preview
-
-Add screenshots or GIFs inside each project folder for a visual preview.
-
 ## 🤝 Contributions
 
 Feel free to fork this repository, suggest improvements, or contribute new animation ideas.
@@ -81,4 +76,4 @@ If you find these projects useful, consider giving this repository a star.
 
 ---
 
-Made with ❤️ by Rudra Sharma
+## Rudra Sharma
