@@ -76,4 +76,4 @@ If you find these projects useful, consider giving this repository a star.
 
 ---
 
-Made with ❤️ by Rudra Sharma
+## Rudra Sharma
