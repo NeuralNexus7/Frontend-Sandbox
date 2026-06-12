@@ -67,10 +67,6 @@ This repository serves as a collection of frontend animation projects to:
 * Build portfolio projects
 * Explore creative web design ideas
 
-## 📸 Preview
-
-Add screenshots or GIFs inside each project folder for a visual preview.
-
 ## 🤝 Contributions
 
 Feel free to fork this repository, suggest improvements, or contribute new animation ideas.
